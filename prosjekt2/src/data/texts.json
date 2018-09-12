@@ -2,92 +2,88 @@
     "data": {
         "texts": [
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 1
-            },
-
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Flawless Honey",
+                "content": "What have those lonely mountains worth revealing?<br>More glory and more grief than I can tell:<br>The earth that wakes one human heart to feeling<br>Can centre both the worlds of Heaven and Hell.",
+                "author": "Justin Timberlake",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
                 "category": 1
             },
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Overjoyed Chance",
+                "content": "Although I knew that we had lost<br>The hope and glory of our life;<br>And now, benighted, tempest-tossed,<br>Must bear alone the weary strife.",
+                "author": "Dave Matthews",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
+                "category": 2
+            },
+            {
+                "title": "Precious Discussion",
+                "content": "No, they won’t let me out of winter,<br>and I’ve promised myself,<br>even if I’m the last snowman,<br>that I’ll ride into spring<br>on their melting shoulders.",
+                "author": "John Travolta",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
+                "category": 3
+            },
+            {
+                "title": "Elated Baby",
+                "content": "What is all this juice and all this joy?<br>A strain of the earth’s sweet being in the beginning <br>In Eden garden. – Have, get, before it cloy,<br>Before it cloud, Christ, lord, and sour with sinning,<br>Innocent mind and Mayday in girl and boy,<br>Most, O maid’s child, thy choice and worthy the winning.",
+                "author": "Paris Hilton",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
+                "category": 4
+            },
+            {
+                "title": "Sweet Range",
+                "content": "And salted was my food, and my repose,<br>Salted and sobered, too, by the bird’s voice<br>Speaking for all who lay under the stars,<br>Soldiers and poor, unable to rejoice.",
+                "author": "Marilyn Monroe",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
                 "category": 1
             },
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Sweet Place",
+                "content": "But most, like Chaos - Stopless - cool -<br>Without a Chance, or spar -<br>Or even a Report of Land -<br>To justify - Despair.",
+                "author": "Denzel Washington",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
+                "category": 2
+            },
+            {
+                "title": "Overjoyed Reaction",
+                "content": "I sat on a gray stone bench<br>ringed with the ingenue faces<br>of pink and white impatiens<br>and placed my grief<br>in the mouth of language,<br>the only thing that would grieve with me.",
+                "author": "Jaden Smith",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
+                "category": 3
+            },
+            {
+                "title": "Vulgar Stitch",
+                "content": "What if last night I was the one who lay dead<br>While the dead burned beside me<br>Trembling with passionate pity<br>At my blameless life and shaking its flamelike head?",
+                "author": "Liv Tyler",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
+                "category": 4
+            },
+            {
+                "title": "Vulgar Baby",
+                "content": "Why have you pushed him from his world into mine,<br>stopped him there and turned his ear<br>toward my warning shout?",
+                "author": "John Travolta",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
                 "category": 1
             },
-
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Square Baby",
+                "content": "But still the rich confusion of the sea,<br>Unceasing voice, sombre and solacing,<br>Rises through veils of silence past the trees;<br>In restless repetition bound, yet free,<br>Wave after wave in deluge fresh releasing<br>An ancient speech, hushed in tremendous ease.",
+                "author": "John Travolta",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
                 "category": 2
             },
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2
-            },
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2
-            },
-
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2
-            },
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Sweet Baby",
+                "content": "I sat on a gray stone bench<br>ringed with the ingenue faces<br>of pink and white impatiens<br>and placed my grief<br>in the mouth of language,<br>the only thing that would grieve with me.",
+                "author": "Leonardo DiCaprio",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
                 "category": 3
             },
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 3
-            },
-
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 3
-            },
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 3
+                "title": "Precious Baby",
+                "content": "If I could dwell<br>Where Israfel<br>Hath dwelt, and he where I,<br>He might not sing so wildly well<br>A mortal melody,<br>While a bolder note than this might swell<br>From my lyre within the sky.",
+                "author": "Bruce Springsteen",
+                "source": "https://www.poetryoutloud.org/poems-and-performance/random-poem",
+                "category": 4
             }
         ]
     }
