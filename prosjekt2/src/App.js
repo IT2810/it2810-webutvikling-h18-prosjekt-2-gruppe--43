@@ -6,9 +6,11 @@ import AssetContainer from './components/asset-container/asset-container'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app">
         <Header/>
-        <AssetContainer/>
+        <div className="content">
+          <AssetContainer/>
+        </div>
       </div>
     );
   }
