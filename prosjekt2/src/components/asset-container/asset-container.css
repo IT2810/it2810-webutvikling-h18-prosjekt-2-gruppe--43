@@ -6,7 +6,7 @@ div.asset-container {
         'asset        asset'
         'author-label author-info'
         'source-label source-info';
-    width: 80%;
+    width: 74%;
 }
 
 /*  MEDIA QUERIES */
@@ -72,8 +72,8 @@ div.asset-container {
 
 section.asset {
     grid-area: asset;
-    background-color: #aaa;
-    border: 2px solid black;
+    background-color: #ddd;
+    border: 2px solid #aaa;
 }
 
 section.label {
