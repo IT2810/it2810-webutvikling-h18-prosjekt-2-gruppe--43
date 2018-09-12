@@ -7,9 +7,9 @@ class AssetContainer extends Component {
       <div className="asset-container">
         <section className="asset"></section>
         <section className="author-label label"></section>
-        <section className="author info"></section>
+        <section className="author-info info"></section>
         <section className="source-label label"></section>
-        <section className="source info"></section>
+        <section className="source-info info"></section>
       </div>
     );
   }
