@@ -1,12 +1,12 @@
 {
     "data": {
-        "texts": [ 
+        "texts": [
             {
                 "title": "",
                 "content": "",
                 "author": "",
                 "source": "",
-                "category": 1 
+                "category": 1
             },
 
             {
@@ -21,36 +21,14 @@
                 "content": "",
                 "author": "",
                 "source": "",
-                "category": 1 
+                "category": 1
             },
             {
                 "title": "",
                 "content": "",
                 "author": "",
                 "source": "",
-                "category": 1 
-            },
-
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2 
-            },
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2 
-            },
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2 
+                "category": 1
             },
 
             {
@@ -58,21 +36,43 @@
                 "content": "",
                 "author": "",
                 "source": "",
-                "category": 2 
+                "category": 2
             },
             {
                 "title": "",
                 "content": "",
                 "author": "",
                 "source": "",
-                "category": 3 
+                "category": 2
             },
             {
                 "title": "",
                 "content": "",
                 "author": "",
                 "source": "",
-                "category": 3 
+                "category": 2
+            },
+
+            {
+                "title": "",
+                "content": "",
+                "author": "",
+                "source": "",
+                "category": 2
+            },
+            {
+                "title": "",
+                "content": "",
+                "author": "",
+                "source": "",
+                "category": 3
+            },
+            {
+                "title": "",
+                "content": "",
+                "author": "",
+                "source": "",
+                "category": 3
             },
 
             {
@@ -87,7 +87,7 @@
                 "content": "",
                 "author": "",
                 "source": "",
-                "category": 3 
+                "category": 3
             }
         ]
     }
