@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import './asset-conatiner.css';
+import './asset-container.css';
 
 class AssetContainer extends Component {
   render() {
     return (
-      <div className="asset-conatiner">
+      <div className="asset-container">
+        <h1>AssetContainer</h1>
       </div>
     );
   }
