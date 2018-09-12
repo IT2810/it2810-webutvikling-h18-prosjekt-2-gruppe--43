@@ -1,24 +1,90 @@
 div.asset-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: minmax(4em, auto) auto auto;
+    grid-template-rows: minmax(12em, auto) auto auto;
     grid-template-areas:
         'asset        asset'
         'author-label author-info'
-        'source-label source-info'
+        'source-label source-info';
+    width: 80%;
 }
+
+/*  MEDIA QUERIES */
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/*
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+/*@media (min-width: 481px) and (max-width: 767px) {*/
+@media (max-width: 767px) {
+    div.asset-container {
+        width: 100%;
+        padding: 0 1em;
+    }
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+/*
+@media (min-width: 320px) and (max-width: 480px) {
+    div.asset-container {
+        width: 100%;
+    }
+}*/
+
+/*  END MEDIA QUERIES */
 
 section.asset {
     grid-area: asset;
+    background-color: #aaa;
+    border: 2px solid black;
 }
 
 section.label {
-
 }
 section.info {
-
+    text-align: right;
 }
 
+section[class^="author"] {
+    padding-top: 1em;
+}
 section.author-label {
     grid-area: author-label;
 }

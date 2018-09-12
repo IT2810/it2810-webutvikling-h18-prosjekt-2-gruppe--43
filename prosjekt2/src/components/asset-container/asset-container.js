@@ -6,10 +6,10 @@ class AssetContainer extends Component {
     return (
       <div className="asset-container">
         <section className="asset"></section>
-        <section className="author-label label"></section>
-        <section className="author-info info"></section>
-        <section className="source-label label"></section>
-        <section className="source-info info"></section>
+        <section className="author-label label">Utgiver</section>
+        <section className="author-info info">Whatever</section>
+        <section className="source-label label">Kilde</section>
+        <section className="source-info info">Whatever</section>
       </div>
     );
   }
