@@ -2,92 +2,88 @@
     "data": {
         "images": [
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 1
-            },
-
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Sweet Range",
+                "content": "assets/images/undraw_blank_canvas_3rbb.svg",
+                "author": "Sean Penn",
+                "source": "https://undraw.co",
                 "category": 1
             },
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Wandering Range",
+                "content": "assets/images/undraw_Calculator_0evy.svg",
+                "author": "Chuck Lorre",
+                "source": "https://undraw.co",
+                "category": 2
+            },
+            {
+                "title": "Wandering Chance",
+                "content": "assets/images/undraw_city_driver_jh2h.svg",
+                "author": "Franco Nero",
+                "source": "https://undraw.co",
+                "category": 3
+            },
+            {
+                "title": "Wandering Reaction",
+                "content": "assets/images/undraw_designer_life_w96d.svg",
+                "author": "Sean Penn",
+                "source": "https://undraw.co",
+                "category": 4
+            },
+            {
+                "title": "Square Range",
+                "content": "assets/images/undraw_in_the_pool_c5h0.svg",
+                "author": "Franco Nero",
+                "source": "https://undraw.co",
                 "category": 1
             },
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Aboard Discussion",
+                "content": "assets/images/undraw_on_the_office_fbfs.svg",
+                "author": "Justin Timberlake",
+                "source": "https://undraw.co",
+                "category": 2
+            },
+            {
+                "title": "Square Discussion",
+                "content": "assets/images/undraw_personalization_triu.svg",
+                "author": "Paris Hilton",
+                "source": "https://undraw.co",
+                "category": 3
+            },
+            {
+                "title": "Unequal Chance",
+                "content": "assets/images/undraw_product_teardown_elol.svg",
+                "author": "Ray Romano",
+                "source": "https://undraw.co",
+                "category": 4
+            },
+            {
+                "title": "Aboard Place",
+                "content": "assets/images/undraw_science_fqhl.svg",
+                "author": "Dave Matthews",
+                "source": "https://undraw.co",
                 "category": 1
             },
-
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Wandering Honey",
+                "content": "assets/images/undraw_server_status_5pbv.svg",
+                "author": "Jaden Smith",
+                "source": "https://undraw.co",
                 "category": 2
             },
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2
-            },
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2
-            },
-
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 2
-            },
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
+                "title": "Elated Honey",
+                "content": "assets/images/undraw_track_and_field_33qn.svg",
+                "author": "Marilyn Monroe",
+                "source": "https://undraw.co",
                 "category": 3
             },
             {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 3
-            },
-
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 3
-            },
-            {
-                "title": "",
-                "content": "",
-                "author": "",
-                "source": "",
-                "category": 3
+                "title": "Elated Place",
+                "content": "assets/images/undraw_wireframing_nxyi.svg",
+                "author": "Liv Tyler",
+                "source": "https://undraw.co",
+                "category": 4
             }
         ]
     }
