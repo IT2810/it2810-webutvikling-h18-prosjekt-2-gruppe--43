@@ -17,18 +17,18 @@ images = [
 ]
 
 sounds = [
-    'assets/images/Black_Ant_-_01_-_Fater_Lee.mp3',
-    'assets/images/BoxCat_Games_-_10_-_Epic_Song.mp3',
-    'assets/images/Broke_For_Free_-_01_-_Night_Owl.mp3',
-    'assets/images/Broke_For_Free_-_05_-_Something_Elated.mp3',
-    'assets/images/Gillicuddy_-_05_-_Springish.mp3',
-    'assets/images/Jahzzar_-_05_-_Siesta.mp3',
-    'assets/images/Jason_Shaw_-_RUNNING_WATERS.mp3',
-    'assets/images/Kai_Engel_-_04_-_Moonlight_Reprise.mp3',
-    'assets/images/Monk_Turner__Fascinoma_-_01_-_Its_Your_Birthday.mp3',
-    'assets/images/Podington_Bear_-_Starling.mp3',
-    'assets/images/The_Kyoto_Connection_-_09_-_Hachiko_The_Faithtful_Dog.mp3',
-    'assets/images/Tours_-_01_-_Enthusiast.mp3'
+    'assets/sounds/Black_Ant_-_01_-_Fater_Lee.mp3',
+    'assets/sounds/BoxCat_Games_-_10_-_Epic_Song.mp3',
+    'assets/sounds/Broke_For_Free_-_01_-_Night_Owl.mp3',
+    'assets/sounds/Broke_For_Free_-_05_-_Something_Elated.mp3',
+    'assets/sounds/Gillicuddy_-_05_-_Springish.mp3',
+    'assets/sounds/Jahzzar_-_05_-_Siesta.mp3',
+    'assets/sounds/Jason_Shaw_-_RUNNING_WATERS.mp3',
+    'assets/sounds/Kai_Engel_-_04_-_Moonlight_Reprise.mp3',
+    'assets/sounds/Monk_Turner__Fascinoma_-_01_-_Its_Your_Birthday.mp3',
+    'assets/sounds/Podington_Bear_-_Starling.mp3',
+    'assets/sounds/The_Kyoto_Connection_-_09_-_Hachiko_The_Faithtful_Dog.mp3',
+    'assets/sounds/Tours_-_01_-_Enthusiast.mp3'
 ]
 
 nouns = [
@@ -126,7 +126,7 @@ for i in range(12):
     img_title = random_title()
     img_content = images[i]
     img_author = random_author()
-    
+
     images_obj['data']['images'].append({
         'title': img_title,
         'content': img_content,
