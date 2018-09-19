@@ -1,8 +1,9 @@
 div.asset-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: minmax(12em, auto) auto auto;
+    grid-template-rows: auto minmax(12em, auto) auto auto;
     grid-template-areas:
+        'tabs         tabs'
         'asset        asset'
         'author-label author-info'
         'source-label source-info';
@@ -69,6 +70,27 @@ div.asset-container {
 }*/
 
 /*  END MEDIA QUERIES */
+
+section.tabs {
+    grid-area: tabs;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    grid-auto-flow: row;
+}
+div.tab {
+    text-align: center;
+    padding: 0.6em 0;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    background-color: #e8e8f1;
+    user-select: none;
+}
+div.tab:hover {
+    background-color: #d9d9f5;
+}
+div.tab:first-child {
+    border-left: 1px solid #aaa;
+}
 
 section.asset {
     grid-area: asset;
