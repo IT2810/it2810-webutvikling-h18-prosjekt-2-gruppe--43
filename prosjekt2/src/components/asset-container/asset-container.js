@@ -2,19 +2,37 @@ import React, { Component } from 'react';
 import './asset-container.css';
 
 class AssetContainer extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      tabs: this.computeTabs(props.tabs)
+    }
+  }
+
+  computeTabs(tb) {
+    return tb.reduce((acc, cur, ind) => {
+      if (ind < 4) acc.tabs.push(cur)
+      else acc.extra++
+      return acc
+    }, { tabs: [], extra: 0 })
+  }
+
   render() {
+    const tabs = this.state.tabs
+    const extra = tabs.extra ? <div className="extra">{ tabs.extra }</div> : null
+
     return (
       <div className="asset-container">
         <section className="tabs">
           {
-            this.props.tabs.reduce((acc, cur, ind) => {
-              if (ind < 4) acc.tabs.push(cur)
-              else acc.extra++
-              return acc
-            }, { tabs: [], extra: 0 })
-            .tabs.map((tab, index) => {
+            tabs.tabs.map((tab, index) => {
               return <div className="tab" key={ index }>{ tab }</div>
             })
+          }
+          {
+            extra
           }
         </section>
         <section className="asset"></section>
