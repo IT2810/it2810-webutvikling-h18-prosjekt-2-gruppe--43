@@ -11,7 +11,7 @@ class App extends Component {
       <div className="app">
         <Header/>
         <div className="content">
-          <AssetContainer tabs={['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4']} />
+          <AssetContainer tabs={['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4', 'Tab 5', 'Tab 6']} />
         </div>
       </div>
     );

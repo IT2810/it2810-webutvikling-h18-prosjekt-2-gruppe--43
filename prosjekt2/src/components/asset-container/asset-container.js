@@ -7,7 +7,12 @@ class AssetContainer extends Component {
       <div className="asset-container">
         <section className="tabs">
           {
-            this.props.tabs.map((tab, index) => {
+            this.props.tabs.reduce((acc, cur, ind) => {
+              if (ind < 4) acc.tabs.push(cur)
+              else acc.extra++
+              return acc
+            }, { tabs: [], extra: 0 })
+            .tabs.map((tab, index) => {
               return <div className="tab" key={ index }>{ tab }</div>
             })
           }
