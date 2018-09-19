@@ -120,7 +120,7 @@ sounds_obj = { 'data': { 'sounds': [] } }
 texts_obj = { 'data': { 'texts': [] } }
 
 for i in range(12):
-    category = (i % 4) + 1
+    category = (i % 3) + 1
 
     # Images
     img_title = random_title()
