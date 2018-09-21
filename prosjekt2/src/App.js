@@ -22,6 +22,7 @@ function shuffle(array) {
   return array
 }
 
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -36,26 +37,34 @@ class App extends Component {
     }
   }
 
+  updateFilter() {
+    filter(this.state.filter.imageCategory, this.state.filter.soundCategory, this.state.filter.textCategory)
+      .then(res => {
+        this.setState({ assets: shuffle(res) })
+      })
+      .catch(err => console.error(err))
+  }
+
+  handleFilterChange(change) {
+    this.setState({
+      filter: change,
+    }, () => {
+      this.updateFilter();
+    });
+  }
   render() {
 
     return (
       <div className="app">
-        <Header/>
-        <div className="content">
+        <Header filter={this.state.filter} onFilterChange={this.handleFilterChange.bind(this)}/>
+        <div className="content"  filter={this.state.filter}>
           <AssetContainer assets={ this.state.assets }/>
         </div>
       </div>
     );
   }
   componentDidMount() {
-    // Get randomly filtered elements on first load
-    filter(this.state.filter.imageCategory, this.state.filter.soundCategory, this.state.filter.textCategory)
-      .then(res => {
-        this.setState({ assets: shuffle(res) })
-      })
-      .catch(err => console.error(err))
-
-    // Remember: set filter initial values to randomized ints
+    this.updateFilter();
   }
 }
 
