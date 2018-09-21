@@ -1,0 +1,90 @@
+{
+    "data": {
+        "images": [
+            {
+                "title": "Crowded Daughter",
+                "content": "/images/undraw_blank_canvas_3rbb.svg",
+                "author": "Drew Barrymore",
+                "source": "https://undraw.co",
+                "category": 1
+            },
+            {
+                "title": "Wanting Laugh",
+                "content": "/images/undraw_Calculator_0evy.svg",
+                "author": "Leonardo DiCaprio",
+                "source": "https://undraw.co",
+                "category": 2
+            },
+            {
+                "title": "Obnoxious Shoes",
+                "content": "/images/undraw_city_driver_jh2h.svg",
+                "author": "LeBron James",
+                "source": "https://undraw.co",
+                "category": 3
+            },
+            {
+                "title": "General Tax",
+                "content": "/images/undraw_designer_life_w96d.svg",
+                "author": "Justin Timberlake",
+                "source": "https://undraw.co",
+                "category": 1
+            },
+            {
+                "title": "Ugliest Action",
+                "content": "/images/undraw_in_the_pool_c5h0.svg",
+                "author": "Leonardo DiCaprio",
+                "source": "https://undraw.co",
+                "category": 2
+            },
+            {
+                "title": "High-pitched Pan",
+                "content": "/images/undraw_on_the_office_fbfs.svg",
+                "author": "Sean Penn",
+                "source": "https://undraw.co",
+                "category": 3
+            },
+            {
+                "title": "Parsimonious Approval",
+                "content": "/images/undraw_personalization_triu.svg",
+                "author": "Daniel Radcliffe",
+                "source": "https://undraw.co",
+                "category": 1
+            },
+            {
+                "title": "Furtive Flame",
+                "content": "/images/undraw_product_teardown_elol.svg",
+                "author": "Leonardo DiCaprio",
+                "source": "https://undraw.co",
+                "category": 2
+            },
+            {
+                "title": "Deserted Kiss",
+                "content": "/images/undraw_science_fqhl.svg",
+                "author": "Daniel Radcliffe",
+                "source": "https://undraw.co",
+                "category": 3
+            },
+            {
+                "title": "Ambiguous Lumber",
+                "content": "/images/undraw_server_status_5pbv.svg",
+                "author": "Bruce Springsteen",
+                "source": "https://undraw.co",
+                "category": 1
+            },
+            {
+                "title": "Snobbish Jellyfish",
+                "content": "/images/undraw_track_and_field_33qn.svg",
+                "author": "Daniel Radcliffe",
+                "source": "https://undraw.co",
+                "category": 2
+            },
+            {
+                "title": "Cloudy Religion",
+                "content": "/images/undraw_wireframing_nxyi.svg",
+                "author": "Ron Howard",
+                "source": "https://undraw.co",
+                "category": 3
+            }
+        ]
+    }
+}

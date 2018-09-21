@@ -1,0 +1,187 @@
+div.asset-container {
+    display: grid;
+    grid-template-areas:
+        'tabs'
+        'asset';
+    width: 80%;
+}
+
+section.tabs {
+    grid-area: tabs;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #e1e0ee;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+}
+div.tab {
+    text-align: center;
+    padding: 0.6em 1em 0.5em;
+    user-select: none;
+    color: #333;
+    font-size: 1.4em;
+}
+div.tab.tab-start:before {
+    content: '\f100';
+    font-family: 'FontAwesome';
+}
+div.tab.tab-previous:before {
+    content: '\f104';
+    font-family: 'FontAwesome';
+}
+div.tab.tab-next:before {
+    content: '\f105';
+    font-family: 'FontAwesome';
+}
+div.tab.tab-end:before {
+    content: '\f101';
+    font-family: 'FontAwesome';
+}
+div.tab:not(.tab-current):hover {
+    color: #aaa;
+}
+span.asset-number {
+    color: #878787;
+    font-size: 0.8em;
+}
+
+section.asset {
+    grid-area: asset;
+    padding: 2em;
+    background-color: #e1e0ee;
+    border-color: #aaa;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr 4em;
+    grid-template-areas:
+        'image text text'
+        'image sound credits';
+}
+div.image {
+    grid-area: image;
+}
+div.image img {
+    width: 100%;
+}
+div.text {
+    grid-area: text;
+    text-align: center;
+    font-family: 'DancingScript';
+    font-size: 2em;
+    color: #282b38;
+    overflow-y: auto;
+}
+div.text h2 {
+    margin: 0;
+}
+div.sound {
+    grid-area: sound;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+audio::-webkit-media-controls-panel {
+    background-color: #e1e0ee;
+}
+
+div.credits {
+    grid-area: credits;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        'author-label author-info'
+        'source-label source-info';
+}
+div.author-label { grid-area: author-label; }
+div.author-info  { grid-area: author-info; }
+div.source-label { grid-area: source-label; }
+div.source-info  { grid-area: source-info; }
+div.label {
+    text-align: right;
+    padding-right: 0.6em;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+div.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+a {
+    text-decoration: none;
+    color: #4191b1;
+}
+
+
+/*  MEDIA QUERIES */
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/*
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+/*@media (min-width: 481px) and (max-width: 767px) {*/
+@media (max-width: 767px) {
+    div.asset-container {
+        width: 100%;
+        padding: 0 1em;
+    }
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+/*
+@media (min-width: 320px) and (max-width: 480px) {
+    div.asset-container {
+        width: 100%;
+    }
+}*/
+
+/*  END MEDIA QUERIES */
