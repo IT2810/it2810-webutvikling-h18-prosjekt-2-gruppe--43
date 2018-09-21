@@ -58,11 +58,11 @@ section.asset {
     border-width: 0 1px 1px 1px;
 
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr 1fr;
     grid-template-rows: 1fr 4em;
     grid-template-areas:
-        'image text'
-        'image sound';
+        'image text text'
+        'image sound credits';
 }
 div.image {
     grid-area: image;
@@ -91,28 +91,39 @@ audio::-webkit-media-controls-panel {
     background-color: #e1e0ee;
 }
 
-section.label {
+div.credits {
+    grid-area: credits;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        'author-label author-info'
+        'source-label source-info';
 }
-section.info {
+div.author-label { grid-area: author-label; }
+div.author-info  { grid-area: author-info; }
+div.source-label { grid-area: source-label; }
+div.source-info  { grid-area: source-info; }
+div.label {
     text-align: right;
+    padding-right: 0.6em;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+div.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+a {
+    text-decoration: none;
+    color: #4191b1;
 }
 
-section[class^="author"] {
-    padding-top: 1em;
-}
-section.author-label {
-    grid-area: author-label;
-}
-section.source-label {
-    grid-area: source-label;
-}
-
-section.author-info {
-    grid-area: author-info;
-}
-section.source-info {
-    grid-area: source-info;
-}
 
 /*  MEDIA QUERIES */
 

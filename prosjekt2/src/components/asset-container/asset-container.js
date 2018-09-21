@@ -60,13 +60,14 @@ class AssetContainer extends Component {
     let sound = null
     let text = null
     let textTitle = null
+    let authors = null
+    let sources = null
 
     if (this.props.assets && this.state.currentTab >= 0 && this.state.currentTab < this.props.assets.length) {
       const asset = this.props.assets[this.state.currentTab]
       const imgAsset = asset[0]
       const sndAsset = asset[1]
       const txtAsset = asset[2]
-      console.log(asset)
 
       image = <img src={ imgAsset.content } alt={ imgAsset.title } title={ imgAsset.title } />
       sound = (
@@ -76,6 +77,17 @@ class AssetContainer extends Component {
       )
       textTitle = <h2>{ txtAsset.title }</h2>
       text = <p dangerouslySetInnerHTML={{__html: txtAsset.content}}></p>
+
+      authors = (
+        <span>
+          { imgAsset.author }, { sndAsset.author }, { txtAsset.author }
+        </span>
+      )
+      sources = (
+        <span>
+          <a href={ imgAsset.source } target="_blank">Image</a>, <a href={ sndAsset.source } target="_blank">Sound</a>, <a href={ txtAsset.source } target="_blank">Text</a>
+        </span>
+      )
     }
 
     return (
@@ -85,11 +97,13 @@ class AssetContainer extends Component {
           <div className="image">{ image }</div>
           <div className="text">{ textTitle }{ text }</div>
           <div className="sound">{ sound }</div>
+          <div className="credits">
+            <div className="author-label label">Utgivere</div>
+            <div className="author-info info">{ authors }</div>
+            <div className="source-label label">Kilder</div>
+            <div className="source-info info">{ sources }</div>
+          </div>
         </section>
-        {/* <section className="author-label label">Utgiver</section>
-        <section className="author-info info">Whatever</section>
-        <section className="source-label label">Kilde</section>
-        <section className="source-info info">Whatever</section> */}
       </div>
     );
   }
