@@ -6,3 +6,9 @@ div.content {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 767px) {
+    div.content {
+        width: 100%;
+    }
+}

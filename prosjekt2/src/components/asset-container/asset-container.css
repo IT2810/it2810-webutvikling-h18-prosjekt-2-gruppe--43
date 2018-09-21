@@ -156,7 +156,19 @@ a {
 ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    div.asset-container {
+        width: 100%;
+    }
+    section.asset {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            'sound' 'image' 'text' 'credits';
+        border: none;
+    }
+    section.tabs { border: none; }
+    div.tab { padding: 0.5em; }
 }
 
 /*
@@ -168,8 +180,16 @@ a {
 @media (max-width: 767px) {
     div.asset-container {
         width: 100%;
-        padding: 0 1em;
     }
+    section.asset {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            'sound' 'image' 'text' 'credits';
+        border: none;
+    }
+    section.tabs { border: none; }
+    div.tab { padding: 0.5em; }
 }
 
 /*
