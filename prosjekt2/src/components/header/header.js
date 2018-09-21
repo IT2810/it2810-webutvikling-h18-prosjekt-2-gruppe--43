@@ -36,11 +36,11 @@ class Header extends Component {
           <h1>Logo</h1>
         </div>
         <div className="filter">
-          <label for="image">Image</label>
+          <label htmlFor="image">Image</label>
           <SelectOption id="image" filter={this.props.filter} onChange={e => this.filterChange(e,"image")} name="imageCategory" options={options}/>
-          <label for="sound">Sound</label>
+          <label htmlFor="sound">Sound</label>
           <SelectOption id="sound" filter={this.props.filter} onChange={e => this.filterChange(e,"sound")} name="textCategory" options={options}/>
-          <label for="text">Text</label>
+          <label htmlFor="text">Text</label>
           <SelectOption id="text" filter={this.props.filter} onChange={e => this.filterChange(e,"text")} name="soundCategory" options={options}/>
         </div>
       </div>

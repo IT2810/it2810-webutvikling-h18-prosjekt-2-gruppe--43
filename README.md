@@ -18,9 +18,15 @@ When rebase is resolved, open a pull request on github
 
 Innholdet på siden fant vi på tre forskjellige nettsider. SVG-bilder kommer fra [undraw.co](https://undraw.co), lyd fra [Free Music Archive](https://freemusicarchive.org/) og tekst fra [Poetry Out Loud](https://www.poetryoutloud.org). Det ligger ingen spesielle motivasjoner bak valg av innhold. Titler er satt sammen av tilfeldige adjektiv og substantiv, og "forfattere" er tilfeldige kjendiser.
 
+Innholdet er lagret i "public"-mappen. Bilder og lyd ligger i hver sin undermappe, mens "databasen" ligger i undermappen "data". Databasen er delt inn i `images.json`, `sounds.json` og  `texts.json`. Det ligger også en Python-fil der som ikke er relevant for innleveringen; denne er bare lagd for å raskt generere databasefilene fra forholdsvis tilfeldig data.
+
 ## Layout
 
 Vi valgte et enkelt layout, med en "header" som lar brukeren filtrere kategorier, og en "asset container" som inneholder funksjonalitet for å navigere mellom de forskjellige resultatene, og viser innholdet. Layouten er stort sett basert på CSS-grid, noe som gjør det enkelt å ta hensyn til forksjellige enheter og skjermstørrelser. Mer om det senere.
+
+Designet til siden er veldig enkelt. Vi har ikke lagt mye energi i å vinne noen design-konkurranser. Om det var en del av oppgaven kunne vi nok fått det til å se penere ut. Fonter er hentet fra [FontSquirrel](https://www.fontsquirrel.com) og [FontAwesome](https://fontawesome.com/), og lisenser er vedlagt font-filene.
+
+PS: Vi er klare over at det bare står "Logo" oppe i venstre hjørne. Det er fordi vi ikke har noen logo. Se for deg inspirerende, banebrytende grafikk.
 
 ## Teknologi og komponenter
 
@@ -33,7 +39,7 @@ Angående den påkrevde AJAX-funksjonaliteten så brukte vi et bibliotek kalt [a
 ### Komponentene
 Det er ikke mange komponenter å snakke om i denne appen. Vi har `Header`, som eksponerer filtreringsfunksjonaliteten, og underkomponenten `SelectOption`, for valg innenfor hver type (bilde, lyd, tekst). Videre har vi `AssetContainer`, som viser resultatet av filtreringen og selve innholdet. På toppen ligger så klart `App`-komponenten. Komponentene har ingen delt `state`, men kommuniserer via `props` (nedover) og `events` (oppover).
 
-Eksempelvis, når et filter endres, så sendes dette via en `event` opp til `Header`, som videresender alle de nåværende valgene (bilde, lyd, tekst) opp til `App`. Her utløses `filter`-funksjonen. Denne tar det kartesiske produktet av alle bilder med kategori X, lyder med kategori Y og tekster med kategori Z, og returnerer dette. Dette settes til `state.assets` i `App`, og denne variabelen brukes som et `prop` til `AssetContainer`.
+Eksempelvis, når et filter endres, så sendes dette via en `event` opp til `Header`, som videresender alle de nåværende valgene (bilde, lyd, tekst) opp til `App`. Her utløses `filter`-funksjonen. Denne tar det kartesiske produktet av alle bilder med kategori X, lyder med kategori Y og tekster med kategori Z, og returnerer dette. Dette settes til `state.assets` i `App`, og denne variabelen brukes som et `prop` til `AssetContainer`. Med tanke på at det er fire bilder, fire lyder og fire tekster i hver kategori vil størrelsen på produktet alltid være 64 kombinasjoner (4 * 4 * 4).
 
 ## Responsivitet
 

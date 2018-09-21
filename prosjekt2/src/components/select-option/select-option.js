@@ -8,7 +8,7 @@ class SelectOption extends Component {
 
     this.optionList = this.props.options.map(option => {
       return (
-        <option value={option}>
+        <option value={option} key={option}>
           {option}
         </option>
       );
@@ -18,7 +18,7 @@ class SelectOption extends Component {
   render() {
     return (
       <div className="select-option">
-        <select name={this.props.name} onChange={e => { this.props.onChange(parseInt(e.target.value))}}>
+        <select name={this.props.name} onChange={e => { this.props.onChange(parseInt(e.target.value, 10))}}>
           {this.optionList}
         </select>
       </div>
