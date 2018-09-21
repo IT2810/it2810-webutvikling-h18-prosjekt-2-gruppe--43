@@ -13,33 +13,48 @@ class AssetContainer extends Component {
   computeTabs(assets) {
     if (!assets) return null
 
-    return assets.reduce((acc, cur, ind) => {
-      if (ind < 4) acc.tabs.push(cur[2].title)
-      else acc.extra++
-
-      return acc
-    }, { tabs: [], extra: 0 })
+    return assets.map(ass => ass[0].title)
   }
 
-  selectTab(evt, index) {
-    this.setState({ currentTab: index })
+  scrollAssets(evt, dir, max) {
+    let addend
+    switch (dir) {
+      case 'start':
+        addend = -this.state.currentTab; break
+      case 'previous':
+        addend = this.state.currentTab === 0 ? 0 : -1; break
+      case 'next':
+        addend = this.state.currentTab === max - 1 ? 0 : 1; break
+      case 'end':
+        addend = max - this.state.currentTab - 1; break
+      default:
+        addend = 0; break
+    }
+
+    this.setState({ currentTab: this.state.currentTab + addend })
   }
 
   render() {
     const tabs = this.computeTabs(this.props.assets)
+    const number = this.props.assets ? <span className="asset-number">{ this.state.currentTab + 1 }/{ this.props.assets.length }</span> : null
 
     // Create tab elements
     let tabsElmt
-    if (tabs && tabs.tabs) {
-      tabsElmt = tabs.tabs.map((tab, ind) => {
-        return <div className="tab" key={ ind } onClick={evt => this.selectTab(evt, ind)}>{ tab }</div>
-      })
+    if (tabs) {
+
+      tabsElmt = (
+        <section className="tabs">
+          <div className="tab tab-start" onClick={ evt => this.scrollAssets(evt, 'start') }></div>
+          <div className="tab tab-previous" onClick={ evt => this.scrollAssets(evt, 'previous') }></div>
+          <div className="tab tab-current">{ number }&nbsp;{ tabs[this.state.currentTab] }</div>
+          <div className="tab tab-next" onClick={ evt => this.scrollAssets(evt, 'next', this.props.assets.length) }></div>
+          <div className="tab tab-end" onClick={ evt => this.scrollAssets(evt, 'end', this.props.assets.length) }></div>
+        </section>
+      )
     } else {
       tabsElmt = <div className="tabs-loading"></div>
     }
 
-    // Extra tabs
-    const extra = tabs && tabs.extra ? <div className="tab extra">{ tabs.extra } more</div> : null
     // Load assets
     let image = null
     let sound = null
@@ -53,9 +68,9 @@ class AssetContainer extends Component {
       const txtAsset = asset[2]
       console.log(asset)
 
-      image = <img src={ imgAsset.content } alt={ imgAsset.title } />
+      image = <img src={ imgAsset.content } alt={ imgAsset.title } title={ imgAsset.title } />
       sound = (
-        <audio src={ sndAsset.content } controls>
+        <audio src={ sndAsset.content } title={ sndAsset.title } controls>
           Your browser doesn't seem to support HTML5 audio.
         </audio>
       )
@@ -65,19 +80,16 @@ class AssetContainer extends Component {
 
     return (
       <div className="asset-container">
-        <section className="tabs">
-          { tabsElmt }
-          { extra }
-        </section>
+        { tabsElmt }
         <section className="asset">
           <div className="image">{ image }</div>
           <div className="text">{ textTitle }{ text }</div>
           <div className="sound">{ sound }</div>
         </section>
-        <section className="author-label label">Utgiver</section>
+        {/* <section className="author-label label">Utgiver</section>
         <section className="author-info info">Whatever</section>
         <section className="source-label label">Kilde</section>
-        <section className="source-info info">Whatever</section>
+        <section className="source-info info">Whatever</section> */}
       </div>
     );
   }
