@@ -98,8 +98,36 @@ div.tab:first-child {
 
 section.asset {
     grid-area: asset;
+    padding: 2em;
     background-color: #ddd;
     border: 2px solid #aaa;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 4em;
+    grid-template-areas:
+        'image text'
+        'image sound';
+}
+div.image {
+    grid-area: image;
+}
+div.text {
+    grid-area: text;
+    text-align: center;
+    font-family: 'DancingScript';
+    font-size: 2em;
+    color: #282b38;
+    overflow-y: auto;
+}
+div.text h2 {
+    
+}
+div.sound {
+    grid-area: sound;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 section.label {

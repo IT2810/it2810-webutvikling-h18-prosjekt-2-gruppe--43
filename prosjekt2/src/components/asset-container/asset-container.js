@@ -6,7 +6,7 @@ class AssetContainer extends Component {
     super(props)
 
     this.state = {
-      currentTab: null
+      currentTab: 0
     }
   }
 
@@ -22,12 +22,13 @@ class AssetContainer extends Component {
   }
 
   selectTab(evt, index) {
-    console.log(index)
+    this.setState({ currentTab: index })
   }
 
   render() {
     const tabs = this.computeTabs(this.props.assets)
 
+    // Create tab elements
     let tabsElmt
     if (tabs && tabs.tabs) {
       tabsElmt = tabs.tabs.map((tab, ind) => {
@@ -37,7 +38,30 @@ class AssetContainer extends Component {
       tabsElmt = <div className="tabs-loading"></div>
     }
 
+    // Extra tabs
     const extra = tabs && tabs.extra ? <div className="tab extra">{ tabs.extra } more</div> : null
+    // Load assets
+    let image = null
+    let sound = null
+    let text = null
+    let textTitle = null
+
+    if (this.props.assets && this.state.currentTab >= 0 && this.state.currentTab < this.props.assets.length) {
+      const asset = this.props.assets[this.state.currentTab]
+      const imgAsset = asset[0]
+      const sndAsset = asset[1]
+      const txtAsset = asset[2]
+      console.log(asset)
+
+      image = <img src={ imgAsset.content } alt={ imgAsset.title } />
+      sound = (
+        <audio src={ sndAsset.content } controls>
+          Your browser doesn't seem to support HTML5 audio.
+        </audio>
+      )
+      textTitle = <h2>{ txtAsset.title }</h2>
+      text = <p dangerouslySetInnerHTML={{__html: txtAsset.content}}></p>
+    }
 
     return (
       <div className="asset-container">
@@ -46,7 +70,9 @@ class AssetContainer extends Component {
           { extra }
         </section>
         <section className="asset">
-
+          <div className="image">{ image }</div>
+          <div className="text">{ textTitle }{ text }</div>
+          <div className="sound">{ sound }</div>
         </section>
         <section className="author-label label">Utgiver</section>
         <section className="author-info info">Whatever</section>

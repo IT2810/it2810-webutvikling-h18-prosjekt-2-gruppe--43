@@ -2,33 +2,33 @@ import random
 import json
 
 images = [
-    'assets/images/undraw_blank_canvas_3rbb.svg',
-    'assets/images/undraw_Calculator_0evy.svg',
-    'assets/images/undraw_city_driver_jh2h.svg',
-    'assets/images/undraw_designer_life_w96d.svg',
-    'assets/images/undraw_in_the_pool_c5h0.svg',
-    'assets/images/undraw_on_the_office_fbfs.svg',
-    'assets/images/undraw_personalization_triu.svg',
-    'assets/images/undraw_product_teardown_elol.svg',
-    'assets/images/undraw_science_fqhl.svg',
-    'assets/images/undraw_server_status_5pbv.svg',
-    'assets/images/undraw_track_and_field_33qn.svg',
-    'assets/images/undraw_wireframing_nxyi.svg'
+    '/images/undraw_blank_canvas_3rbb.svg',
+    '/images/undraw_Calculator_0evy.svg',
+    '/images/undraw_city_driver_jh2h.svg',
+    '/images/undraw_designer_life_w96d.svg',
+    '/images/undraw_in_the_pool_c5h0.svg',
+    '/images/undraw_on_the_office_fbfs.svg',
+    '/images/undraw_personalization_triu.svg',
+    '/images/undraw_product_teardown_elol.svg',
+    '/images/undraw_science_fqhl.svg',
+    '/images/undraw_server_status_5pbv.svg',
+    '/images/undraw_track_and_field_33qn.svg',
+    '/images/undraw_wireframing_nxyi.svg'
 ]
 
 sounds = [
-    'assets/sounds/Black_Ant_-_01_-_Fater_Lee.mp3',
-    'assets/sounds/BoxCat_Games_-_10_-_Epic_Song.mp3',
-    'assets/sounds/Broke_For_Free_-_01_-_Night_Owl.mp3',
-    'assets/sounds/Broke_For_Free_-_05_-_Something_Elated.mp3',
-    'assets/sounds/Gillicuddy_-_05_-_Springish.mp3',
-    'assets/sounds/Jahzzar_-_05_-_Siesta.mp3',
-    'assets/sounds/Jason_Shaw_-_RUNNING_WATERS.mp3',
-    'assets/sounds/Kai_Engel_-_04_-_Moonlight_Reprise.mp3',
-    'assets/sounds/Monk_Turner__Fascinoma_-_01_-_Its_Your_Birthday.mp3',
-    'assets/sounds/Podington_Bear_-_Starling.mp3',
-    'assets/sounds/The_Kyoto_Connection_-_09_-_Hachiko_The_Faithtful_Dog.mp3',
-    'assets/sounds/Tours_-_01_-_Enthusiast.mp3'
+    '/sounds/Black_Ant_-_01_-_Fater_Lee.mp3',
+    '/sounds/BoxCat_Games_-_10_-_Epic_Song.mp3',
+    '/sounds/Broke_For_Free_-_01_-_Night_Owl.mp3',
+    '/sounds/Broke_For_Free_-_05_-_Something_Elated.mp3',
+    '/sounds/Gillicuddy_-_05_-_Springish.mp3',
+    '/sounds/Jahzzar_-_05_-_Siesta.mp3',
+    '/sounds/Jason_Shaw_-_RUNNING_WATERS.mp3',
+    '/sounds/Kai_Engel_-_04_-_Moonlight_Reprise.mp3',
+    '/sounds/Monk_Turner__Fascinoma_-_01_-_Its_Your_Birthday.mp3',
+    '/sounds/Podington_Bear_-_Starling.mp3',
+    '/sounds/The_Kyoto_Connection_-_09_-_Hachiko_The_Faithtful_Dog.mp3',
+    '/sounds/Tours_-_01_-_Enthusiast.mp3'
 ]
 
 nouns = [

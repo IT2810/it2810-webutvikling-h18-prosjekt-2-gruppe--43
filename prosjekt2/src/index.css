@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'DancingScript';
+    src: url('assets/fonts/DancingScript/DancingScript-Regular.otf') format('opentype');
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
