@@ -3,7 +3,6 @@ div.asset-container {
     grid-template-areas:
         'tabs'
         'asset';
-    width: 80%;
 }
 
 section.tabs {

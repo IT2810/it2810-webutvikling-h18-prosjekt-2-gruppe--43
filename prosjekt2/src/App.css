@@ -5,6 +5,9 @@ div.app {
 div.content {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%
 }
 @media (max-width: 767px) {
     div.content {
