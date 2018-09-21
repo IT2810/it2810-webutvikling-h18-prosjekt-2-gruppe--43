@@ -79,11 +79,15 @@ section.tabs {
 }
 div.tab {
     text-align: center;
-    padding: 0.6em 0;
+    padding: 0.6em 1em 0.5em;
     border-top: 1px solid #aaa;
     border-right: 1px solid #aaa;
     background-color: #e8e8f1;
     user-select: none;
+    color: #333;
+}
+div.tab.extra {
+    color: #1f3525;
 }
 div.tab:hover {
     background-color: #d9d9f5;

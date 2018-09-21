@@ -21,7 +21,7 @@ class AssetContainer extends Component {
 
   render() {
     const tabs = this.state.tabs
-    const extra = tabs.extra ? <div className="extra">{ tabs.extra }</div> : null
+    const extra = tabs.extra ? <div className="tab extra">{ tabs.extra } more</div> : null
 
     return (
       <div className="asset-container">
