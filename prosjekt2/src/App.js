@@ -56,8 +56,8 @@ class App extends Component {
 
     return (
       <div className="app">
-        <Header filter={this.state.filter} onFilterChange={this.handleFilterChange.bind(this)}/>
         <div className="content"  filter={this.state.filter}>
+          <Header filter={this.state.filter} onFilterChange={this.handleFilterChange.bind(this)}/>
           <AssetContainer assets={ this.state.assets }/>
         </div>
       </div>

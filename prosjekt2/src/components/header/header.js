@@ -18,7 +18,6 @@ class Header extends Component {
       default:
         break;
     }
-    // setTimeout(() => this.props.onFilterChange(this.state));
   }
 
   constructor(props) {
@@ -37,9 +36,12 @@ class Header extends Component {
           <h1>Logo</h1>
         </div>
         <div className="filter">
-          <SelectOption filter={this.props.filter} onChange={e => this.filterChange(e,"image")} name="imageCategory" options={options}/>
-          <SelectOption filter={this.props.filter} onChange={e => this.filterChange(e,"sound")} name="textCategory" options={options}/>
-          <SelectOption filter={this.props.filter} onChange={e => this.filterChange(e,"text")} name="soundCategory" options={options}/>
+          <label for="image">Image</label>
+          <SelectOption id="image" filter={this.props.filter} onChange={e => this.filterChange(e,"image")} name="imageCategory" options={options}/>
+          <label for="sound">Sound</label>
+          <SelectOption id="sound" filter={this.props.filter} onChange={e => this.filterChange(e,"sound")} name="textCategory" options={options}/>
+          <label for="text">Text</label>
+          <SelectOption id="text" filter={this.props.filter} onChange={e => this.filterChange(e,"text")} name="soundCategory" options={options}/>
         </div>
       </div>
     );
